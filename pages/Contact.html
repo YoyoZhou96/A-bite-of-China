@@ -1,0 +1,190 @@
+<!--Major_Assignment2, Yao Zhou, 8725164, 2021-04-25-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/contact.css">
+    <title>A Bite of China</title>
+    <script>
+        function myFunction() {
+            alert("Thank you!");
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <img src="../images/title.png" alt="title">
+        <h1>A Bite of China III</h1>
+        <h3>Please leave your thoughts and contact information</h3>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="Index.html" id="home" class="na_a">Home</a></li>
+            <li><a href="Image.html" class="na_a">Images</a></li>
+            <li class="na"><a href="Video.html" class="na_a">Video</a>
+                <ul class="drop">
+                    <li><a href="../nav/one.html">Episode One</a>
+                        <ul class="drop2">
+                            <li><a href="../nav/matsutake.html">Matsutake</a></li>
+                            <li><a href="../nav/beef.html">Shacha Beef Stew</a></li>
+                            <li><a href="../nav/lotus.html">Lotus Root</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../nav/two.html">Episode Two</a></li>
+                    <li><a href="../nav/three.html">Episode Three</a></li>
+                    <li><a href="../nav/four.html">Episode Four</a></li>
+                    <li><a href="../nav/five.html">Episode Five</a></li>
+                    <li><a href="../nav/six.html">Episode Six</a></li>
+                    <li><a href="../nav/seven.html">Episode Seven</a></li>
+                </ul>
+            </li>
+            <li><a href="Contact.html" class="na_a">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <aside id="leftside">
+            <ul id="side">
+                <li>
+                    <a href="Index.html"><img src="../images/logo.jpg" alt="logo" width="160px" height="100px"><br>
+                        A Bite of China III
+                    </a>
+                    <p>"The background and evaluation of the documentary."</p>
+                </li>
+                <li>
+                    <a href="Image.html"><img src="../images/cook.jpg" alt="Recipes" width="160px" height="100px"><br>
+                        Hand-painted Recipes
+                    </a>
+                    <p>"Learn about cooking in a fun way."</p>
+                </li>
+                <li>
+                    <a href="Video.html"><img src="../images/video.gif" alt="Documentary" width="160px"
+                            height="100px"><br>
+                        Documentary
+                    </a>
+                    <p>"Watch the full documentary."</p>
+                </li>
+                <li>
+                    <a href="Contact.html"><img src="../images/email.jfif" alt="Contact" width="160px" height="100px">
+                        <br>
+                        Contact Us
+                    </a>
+                    <p>"Leave your thoughts and contact information."</p>
+                </li>
+            </ul>
+        </aside>
+
+        <section>
+            <div>
+                <form action="">
+                    <label for="name" class="form1">Name:</label>
+                    <input type="text" name="name" id="name" class="form2" autofocus required>
+                    <br> <br>
+                    <label for="address" class="form1">Address:</label>
+                    <input type="text" name="address" id="address" class="form2" required>
+                    <br> <br>
+                    <label for="email" class="form1">Email:</label>
+                    <input type="text" name="emial" id="email" class="form2" required>
+                    <br> <br>
+                    <div class="select">Age:</div> <br>
+                    <select name="age" id="age">
+                        <option selected="selected" disabled="disabled" style='display: none' value=''></option>
+                        <option value="0y">0 - 18</option>
+                        <option value="18y">18 - 29</option>
+                        <option value="30y">30 - 40</option>
+                        <option value="40y">40 - 60</option>
+                        <option value="60y">60 +</option>
+                    </select>
+                    <br> <br>
+                    <div class="select">How ofter do you watch a episode:</div> <br>
+                    <select name="episode" id="episode">
+                        <option selected="selected" disabled="disabled" style='display: none' value=''></option>
+                        <option value="week">A week</option>
+                        <option value="month">A month</option>
+                        <option value="year">A year</option>
+                        <option value="never">Never</option>
+                    </select>
+                    <br> <br>
+                    <label for="type" class="type">What type of food do you like:</label>
+                    <select name="type" id="type" multiple>
+                        <option value="Fried">Fried</option>
+                        <option value="Stew">Stew</option>
+                        <option value="fry">fry</option>
+                        <option value="salad">salad</option>
+                        <option value="Sashimi">Sashimi</option>
+                        <option value="steam">steam</option>
+                    </select>
+                    <br> <br>
+                    <div class="select">Comments:</div> <br>
+                    <textarea name="comments" id="comment"
+                        placeholder="If you have any comments, please enter them here."></textarea>
+                    <br> <br>
+                    <input type="submit" name="submit" id="submit" value="submit" class="button" onclick="myfunction()">
+                    <input type="reset" name="reset" id="reset" class="button">
+                    <div class="end">
+                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                        <strong>Thank you!</strong> We will seriously consider your suggestions and get better!
+                    </div>                      
+                </form>
+            </div>
+        </section>
+
+        <aside id="rightside">
+            <h4>More about you</h4>
+            <div>
+                <form action="" class="right">
+                    <div class="choose">What dou you think about us?</div><br>
+                    <input type="radio" name="thought" value="interesting" id="1" class="thought">
+                    <label for="1">Interesting</label>
+                    <br>
+                    <input type="radio" name="thought" value="just_so_so" id="2" class="thought">
+                    <label for="2">Just so so </label>
+                    <br>
+                    <input type="radio" name="thought" value="boring" id="3" class="thought">
+                    <label for="3">Boring</label>
+                </form>
+                <br> <br>
+                <form action="" class="right">
+                    <div class="choose">My Favourite Episode:</div><br>
+                    <input type="checkbox" name="one" value="Episode One" id="one" class="like">
+                    <label for="one">Episode One</label>
+                    <br>
+                    <input type="checkbox" name="two" value="Episode Two" id="two" class="like">
+                    <label for="two">Episode Two</label>
+                    <br>
+                    <input type="checkbox" name="three" value="Episode Three" id="three" class="like">
+                    <label for="three">Episode Three</label>
+                    <br>
+                    <input type="checkbox" name="four" value="Episode Four" id="four" class="like">
+                    <label for="four">Episode Four</label>
+                    <br>
+                    <input type="checkbox" name="five" value="Episode Five" id="five" class="like">
+                    <label for="five">Episode Five</label>
+                    <br>
+                    <input type="checkbox" name="six" value="Episode Six" id="six" class="like">
+                    <label for="six">Episode Six</label>
+                    <br>
+                    <input type="checkbox" name="seven" value="Episode Seven" id="seven" class="like">
+                    <label for="seven">Episode Seven</label>
+
+                </form>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <address>
+            <a href="emailto:yzhou5164@conestogac.on.ca">Contact Me: yzhou5164@conestogac.on.ca</a>
+        </address>
+        <p>Copyright &copy; 2021 Yao Zhou Assignment2</p>
+    </footer>
+</body>
+
+</html>
